@@ -70,7 +70,6 @@ const miModulo = (() => {
   // turno de la computadora
 
   const determinarGanador = () => {
-
     const [puntosMinimos, puntosComputadora] = puntosJugadores;
 
     setTimeout(() => {
@@ -84,8 +83,7 @@ const miModulo = (() => {
         alert("Computadora Gana");
       }
     }, 100);
-
-  }
+  };
 
   const turnoComputadora = (puntosMinimos) => {
     let puntosComputadora = 0;
@@ -101,7 +99,6 @@ const miModulo = (() => {
     } while (puntosComputadora < puntosMinimos && puntosMinimos <= 21);
 
     determinarGanador();
-
   };
 
   // Eventos
@@ -147,5 +144,5 @@ const miModulo = (() => {
     btnDetener.disabled = false;
   });
 
-  return 'Hola Mundo'
+  return inicializarJuego(1);
 })();
